@@ -1,13 +1,17 @@
+@import './common/breakpoints';
+@import './common/mixins';
+@import './common/reset';
+@import './common/vars';
 @import './header.scss';
 @import './modal.scss';
 @import './cookies.scss';
+@import './home.scss';
 
-body {
-  background: linear-gradient(90deg, #fce7f3 0%, #ddd6fe 100%);
-}
+
 
 :root {
   font-family: "Quicksand", "Poppins", sans-serif;
+  background: linear-gradient(90deg, #fce7f3 0%, #ddd6fe 100%);
   font-size: 16px;
   font-weight: 400;
   line-height: 1.25;
