@@ -3,8 +3,8 @@
     margin-top: 60px;
     width: 100%;
     background-image: image-set(
-      url('../img/bg-img.png') 1x,
-      url('../img/bg-img@2x.png') 2x
+      url('../img/home/bg-img.png') 1x,
+      url('../img/home/bg-img@2x.png') 2x
     );
     background-repeat: no-repeat;
     background-size: cover;
@@ -64,8 +64,7 @@
 
   .home-girl {
     position: absolute;
-    height: 325px;
-    bottom: -306px;
+    bottom: -307px;
     left: -65px;
     z-index: 2;
   }
@@ -82,8 +81,8 @@
   .home {
     width: 100%;
     background-image: image-set(
-      url('../img/bg-img.png') 1x,
-      url('../img/bg-img@2x.png') 2x
+      url('../img/home/bg-img.png') 1x,
+      url('../img/home/bg-img@2x.png') 2x
     );
     background-repeat: no-repeat;
     background-size: cover;
@@ -157,8 +156,6 @@
   }
 
   .home-girl {
-    width: 333px;
-    height: 627px;
     position: absolute;
     bottom: 0px;
     left: 10px;
