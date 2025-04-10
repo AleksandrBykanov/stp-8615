@@ -1,113 +1,80 @@
-@media screen and (max-width: $mobile) {
-  .cookies {
-    display: none;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background: $_soft_gradient;
-    z-index: 100;
-  }
-
-  .cookies-container {
-    max-width: 320px;
-    margin: 0 auto;
-    padding: 57px 24px 24px 24px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    gap: 16px;
-  }
-
-  .cookies-p {
-    width: 250px;
-  }
-
-  .cookies-btns {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-  }
-
-  .cookies-accept,
-  .cookies-decline {
-    border-radius: 16px;
-    padding: 16px;
-    width: 100%;
-    height: 52px;
-    border: none;
-    &:hover {
-      color: $_white;
-      background-color: $_pink;
-      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    }
-    &:active {
-      box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    }
-  }
+.cookies {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: $_soft_gradient;
+  z-index: 100;
 }
 
-@media screen and (min-width: $desktop) {
-  .cookies {
-    display: none;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background: $_soft_gradient;
-    z-index: 100;
-  }
-
-  .cookies-container {
+.cookies-container {
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 57px 24px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 16px;
+  @include media(desktop) {
     width: 524px;
-    margin: 0 auto;
     padding-top: 68px;
     padding-bottom: 26px;
   }
+}
 
-  .cookies-wrapper {
+.cookies-wrapper {
+  @include media(desktop) {
     display: flex;
     flex-direction: column;
-    text-align: center;
     gap: 24px;
   }
+}
 
-  .cookies-title {
+.cookies-title {
+  @include media(desktop) {
     font-weight: 700;
     font-size: 64px;
     line-height: 1.125;
   }
+}
 
-  .cookies-p {
+.cookies-p {
+  width: 250px;
+  @include media(desktop) {
     width: 517px;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.11111;
-    letter-spacing: 0em;
-    text-align: center;
   }
+}
 
-  .cookies-btns {
+.cookies-btns {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  @include media(desktop) {
+    width: 524px;
     margin-top: 38px;
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    gap: 24px;
   }
+}
 
-  .cookies-accept,
-  .cookies-decline {
-    border-radius: 16px;
-    padding: 16px;
-    width: 100%;
-    height: 52px;
-    border: none;
-    &:hover {
-      color: $_white;
-      background-color: $_pink;
-      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    }
-    &:active {
-      box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    }
+.cookies-accept,
+.cookies-decline {
+  border-radius: 16px;
+  padding: 16px;
+  width: 100%;
+  height: 52px;
+  border: none;
+  &:hover {
+    color: $_white;
+    background-color: $_pink;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  }
+  &:active {
+    box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   }
 }
