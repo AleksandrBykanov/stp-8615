@@ -98,11 +98,11 @@
 
 .home-girl {
   position: absolute;
-  bottom: -307px;
+  bottom: -308px;
   left: -65px;
   z-index: 2;
   @include media(desktop) {
-    bottom: 0px;
+    bottom: -2px;
     left: 10px;
   }
 }

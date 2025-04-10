@@ -1,16 +1,40 @@
 <section class="overview">
-    <picture class="overview-img">
+    <picture>
       <source srcset="
-    ../img/cream.png    1x,
-    ../img/cream.png@2x.png 2x
-    " />
-      <img src="../img/cream.png" alt="cream" />
+      ./img/overview/cream.png    1x,
+      ./img/overview/cream@2x.png 2x" />
+      <img class="overview-img" src="./img/overview/cream.png" alt="cream" />
     </picture>
     <div class="overview-container">
       <h2 class="overview-title">Game Overview</h2>
       <p class="overview-p">Welcome to Sweet Candy World, a delicious match-3 adventure filled with colorful candies,
         thrilling challenges, and whimsical characters!</p>
     </div>
-    
+
+
+
+
+    <picture>
+      <source srcset="
+      ./img/overview/enot-desk.png    1x,
+      ./img/overview/enot-desk@2x.png 2x
+      " media="(min-width: 1200px)" />
+      <source srcset="
+      ./img/overview/enot-mob.png      1x,
+      ./img/overview/enot-mob@2x.png   2x
+      " media="(max-width: 1199px)" />
+      <img src="./img/overview/enot-mob.png" alt="logo" />
+    </picture>
+    <picture>
+      <source srcset="
+      ./img/overview/samsung-desk.png    1x,
+      ./img/overview/samsung-desk@2x.png 2x
+      " media="(min-width: 1200px)" />
+      <source srcset="
+      ./img/overview/samsung-mob.png      1x,
+      ./img/overview/samsung-mob@2x.png   2x
+      " media="(max-width: 1199px)" />
+      <img src="./img/overview/samsung-mob.png" alt="logo" />
+    </picture>
 
 </section>
