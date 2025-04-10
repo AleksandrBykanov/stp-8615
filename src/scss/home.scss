@@ -131,7 +131,8 @@
     background-color: $_pink;
     padding: 14px 18px;
     margin-top: 24px;
-    margin-left: 93px;
+    margin-left: auto;
+    margin-right: auto;
     cursor: pointer;
     &:hover {
       box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
@@ -156,6 +157,8 @@
   }
 
   .home-girl {
+    width: 333px;
+    height: 627px;
     position: absolute;
     bottom: 0px;
     left: 10px;
