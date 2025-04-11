@@ -1,19 +1,66 @@
 <section class="overview">
-    <picture>
-      <source srcset="
+  <picture>
+    <source srcset="
       ./img/overview/cream.png    1x,
       ./img/overview/cream@2x.png 2x" />
-      <img class="overview-img" src="./img/overview/cream.png" alt="cream" />
-    </picture>
-    <div class="overview-container">
+    <img class="overview-img" src="./img/overview/cream.png" alt="cream" />
+  </picture>
+  <div class="overview-container">
+    <div class="overview-wrapper">
       <h2 class="overview-title">Game Overview</h2>
       <p class="overview-p">Welcome to Sweet Candy World, a delicious match-3 adventure filled with colorful candies,
         thrilling challenges, and whimsical characters!</p>
     </div>
-
-
-
-
+    <div class="overview-wrapper-candys">
+      <div class="overview-wrapper-candy1">
+        <picture class="overview-picture">
+          <source srcset="
+          ./img/overview/candy1.png      1x,
+          ./img/overview/candy1@2x.png   2x " />
+          <img src="./img/overview/candy1.png" alt="candy" />
+        </picture>
+        <div class="overview-candy-text">
+          <h3>500+ Levels</h3>
+          <p>Packed with unique match-3 puzzles</p>
+        </div>
+      </div>
+      <div class="overview-wrapper-candy2">
+        <picture class="overview-picture">
+          <source srcset="
+          ./img/overview/candy2.png      1x,
+          ./img/overview/candy2@2x.png   2x " />
+          <img src="./img/overview/candy2.png" alt="candy" />
+        </picture>
+        <div class="overview-candy-text">
+          <h3>Hidden Treasures</h3>
+          <p>Unlock hidden treasures by completing exciting missions</p>
+        </div>
+      </div>
+      <div class="overview-wrapper-candy3">
+        <picture class="overview-picture">
+          <source srcset="
+          ./img/overview/candy3.png      1x,
+          ./img/overview/candy3@2x.png   2x " />
+          <img src="./img/overview/candy3.png" alt="candy" />
+        </picture>
+        <div class="overview-candy-text">
+          <h3>Offline Play</h3>
+          <p>Play anytime, anywhere! No Wi-Fi needed</p>
+        </div>
+      </div>
+      <div class="overview-wrapper-candy4">
+        <picture class="overview-picture">
+          <source srcset="
+          ./img/overview/candy4.png      1x,
+          ./img/overview/candy4@2x.png   2x " />
+          <img src="./img/overview/candy4.png" alt="candy" />
+        </picture>
+        <div class="overview-candy-text">
+          <h3>Stunning Graphics</h3>
+          <p>Stunning graphics bring the Candy Kingdom to life!</p>
+        </div>
+      </div>
+    </div>
     <picture>
       <source srcset="
       ./img/overview/enot-desk.png    1x,
@@ -23,7 +70,7 @@
       ./img/overview/enot-mob.png      1x,
       ./img/overview/enot-mob@2x.png   2x
       " media="(max-width: 1199px)" />
-      <img src="./img/overview/enot-mob.png" alt="logo" />
+      <img class="overview-enot" src="./img/overview/enot-mob.png" alt="enot" />
     </picture>
     <picture>
       <source srcset="
@@ -34,7 +81,14 @@
       ./img/overview/samsung-mob.png      1x,
       ./img/overview/samsung-mob@2x.png   2x
       " media="(max-width: 1199px)" />
-      <img src="./img/overview/samsung-mob.png" alt="logo" />
+      <img class="overview-phone" src="./img/overview/samsung-mob.png" alt="phone" />
     </picture>
-
+    <a class="overview-btn" href="https://play.google.com/store/apps/details?id=com.v2r.JewelCandyWorld&hl=en&gl=us"
+        target="_blank">
+        <svg class="overview-icon">
+          <use href="sprite.svg#icon-home"></use>
+        </svg>
+        <span class="overview-span">Start Your Sweet Adventure</span>
+      </a>
+  </div>
 </section>
