@@ -1,0 +1,57 @@
+.cookiespolicy {
+  padding-block: 38px;
+
+  @include media(desktop) {
+    padding-block: 40px;
+  }
+}
+.cookiespolicy-container {
+  width: 272px;
+  margin: 0 auto;
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+
+  @include media(desktop) {
+    width: 1072px;
+  }
+}
+.cookiespolicy-header {
+  font-size: 36px;
+  line-height: calc(120 / 36);
+  font-family: inherit;
+
+  @include media(desktop) {
+    font-size: 48px;
+    line-height: calc(72 / 64);
+  }
+}
+.cookiespolicy-subheader {
+  font-size: 20px;
+  font-family: inherit;
+
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}
+.cookiespolicy-txt {
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  font-family: inherit;
+
+  @include media(desktop) {
+    font-size: 18px;
+    line-height: calc(20 / 18);
+  }
+}
+.cookiespolicy-list {
+  list-style: unset;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  font-family: inherit;
+
+  @include media(desktop) {
+    font-size: 18px;
+    line-height: calc(20 / 18);
+  }
+}
