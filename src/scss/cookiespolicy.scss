@@ -44,14 +44,22 @@
     line-height: calc(20 / 18);
   }
 }
+.cookiespolicy-list-txt {
+  margin-left: -28px;
+}
 .cookiespolicy-list {
   list-style: unset;
   font-size: 16px;
   line-height: calc(20 / 16);
   font-family: inherit;
+  margin-left: 28px;
 
   @include media(desktop) {
     font-size: 18px;
     line-height: calc(20 / 18);
   }
+}
+.cookiespolicy-list-item-link {
+  color: #3b82f6;
+  overflow-wrap: anywhere;
 }
