@@ -1,0 +1,77 @@
+.privacy {
+  padding-block: 38px;
+
+  @include media(desktop) {
+    padding-block: 40px;
+  }
+}
+.btn-back {
+  width: 272px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: #ec4899;
+  border-radius: 12px;
+  border-style: hidden;
+  font-family: inherit;
+  font-size: 24px;
+  color: #ffffff;
+
+  @include media(desktop) {
+    width: 242px;
+  }
+}
+.btn-back-url {
+}
+.privacy-container {
+  width: 272px;
+  margin: 0 auto;
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+
+  @include media(desktop) {
+    width: 1072px;
+  }
+}
+.privacy-list {
+  list-style: unset;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  font-family: inherit;
+
+  @include media(desktop) {
+    font-size: 18px;
+    line-height: calc(20 / 18);
+  }
+}
+.privacy-header {
+  font-size: 36px;
+  line-height: calc(120 / 36);
+  font-family: inherit;
+
+  @include media(desktop) {
+    font-size: 48px;
+    line-height: calc(72 / 64);
+  }
+}
+.privacy-subheader {
+  font-size: 20px;
+  font-family: inherit;
+
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}
+.privacy-txt {
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  font-family: inherit;
+
+  @include media(desktop) {
+    font-size: 18px;
+    line-height: calc(20 / 18);
+  }
+}

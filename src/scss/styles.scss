@@ -3,15 +3,17 @@
 @import './common/reset';
 @import './common/vars';
 @import './header.scss';
+@import './footer.scss';
 @import './home.scss';
 @import './modal.scss';
 @import './cookies.scss';
 @import './overview.scss';
-
-
+@import './privacy.scss';
+@import './terms.scss';
+@import './cookiespolicy.scss';
 
 :root {
-  font-family: "Quicksand", "Poppins", sans-serif;
+  font-family: 'Quicksand', 'Poppins', sans-serif;
   background: linear-gradient(90deg, #fce7f3 0%, #ddd6fe 100%);
   font-size: 16px;
   font-weight: 400;
@@ -27,25 +29,25 @@
 
 @media screen and (max-width: $mobile) {
   h1 {
-    font-family: "Quicksand";
+    font-family: 'Quicksand';
     font-weight: 700;
     font-size: 36px;
   }
 
   h2 {
-    font-family: "Quicksand";
+    font-family: 'Quicksand';
     font-weight: 400;
     font-size: 24px;
   }
 
   h3 {
-    font-family: "Quicksand";
+    font-family: 'Quicksand';
     font-weight: 600;
     font-size: 20px;
   }
 
   h4 {
-    font-family: "Quicksand";
+    font-family: 'Quicksand';
     font-weight: 400;
     font-size: 16px;
   }
@@ -53,31 +55,31 @@
 
 @media screen and (min-width: $desktop) {
   h1 {
-    font-family: "Quicksand";
+    font-family: 'Quicksand';
     font-weight: 700;
     font-size: 40px;
   }
 
   h2 {
-    font-family: "Quicksand";
+    font-family: 'Quicksand';
     font-weight: 400;
     font-size: 36px;
   }
 
   h3 {
-    font-family: "Quicksand";
+    font-family: 'Quicksand';
     font-weight: 600;
     font-size: 24px;
   }
 
   h4 {
-    font-family: "Quicksand";
+    font-family: 'Quicksand';
     font-weight: 400;
     font-size: 18px;
   }
 
   h5 {
-    font-family: "Quicksand";
+    font-family: 'Quicksand';
     font-weight: 400;
     font-size: 14px;
   }
