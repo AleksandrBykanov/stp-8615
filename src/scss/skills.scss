@@ -53,6 +53,12 @@
   }
 }
 
+.skills-img2 {
+  @include media(desktop) {
+    width: 128px;
+  }
+}
+
 .skills-table {
   display: none;
   @include media(desktop) {
