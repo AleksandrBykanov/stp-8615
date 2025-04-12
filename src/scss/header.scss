@@ -1,128 +1,49 @@
-@media screen and (max-width: $mobile) {
-  .header {
-    width: 100%;
-    height: 60px;
-    background: $_pink_gradient;
-    position: fixed;
-    z-index: 10;
-    top: 0;
-  }
-
-  .header.transparent {
+.header {
+  width: 100%;
+  height: 60px;
+  background: $_pink_gradient;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  @include media(desktop) {
+    height: 58px;
     background: transparent;
-  }
-
-  .header-container {
-    width: 320px;
-    margin: 0 auto;
-    padding: 0 24px;
-  }
-
-  .header-navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .header-logo {
-    display: block;
-    margin-top: 8px;
-    width: 54px;
-    height: 44px;
-    cursor: pointer;
-  }
-
-  .header-list {
-    display: none;
-  }
-
-  .burger {
-    margin-top: 10px;
-    position: relative;
-    width: 30px;
-    height: 20px;
-    background-color: transparent;
-    cursor: pointer;
-  }
-
-  .burger-input[type='checkbox'] {
-    display: none;
-  }
-
-  .burger span {
-    display: block;
-    position: absolute;
-    height: 2.5px;
-    width: 100%;
-    background-color: $_main_color;
-    border-radius: 8px;
-    transition: 0.3s;
-  }
-
-  .burger span:nth-of-type(1) {
-    top: 0;
-    transform-origin: left center;
-  }
-
-  .burger span:nth-of-type(2) {
-    top: 50%;
-    transform: translateY(-50%);
-    transform-origin: left center;
-  }
-
-  .burger span:nth-of-type(3) {
-    top: 100%;
-    transform: translateY(-100%);
-    transform-origin: left center;
-  }
-
-  .burger input:checked ~ span:nth-of-type(1) {
-    transform: rotate(45deg);
-    top: 0px;
-    left: 0px;
-  }
-
-  .burger input:checked ~ span:nth-of-type(2) {
-    opacity: 0;
-    width: 0%;
-  }
-
-  .burger input:checked ~ span:nth-of-type(3) {
-    transform: rotate(-45deg);
-    top: 21px;
-    left: 0px;
   }
 }
 
-@media screen and (min-width: $desktop) {
-  .header {
-    width: 100%;
-    height: 58px;
-    background: transparent;
-    position: fixed;
-    z-index: 20;
-  }
+.header.transparent {
+  background: transparent;
+}
 
-  .header-container {
+.header-container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 24px;
+  @include media(desktop) {
     width: 1200px;
-    margin: 0 auto;
     padding: 0 64px;
   }
+}
 
-  .header-navbar {
-    display: flex;
-    gap: 270px;
-    align-items: center;
-    justify-content: space-between;
+.header-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include media(desktop) {
     margin-top: 12px;
   }
+}
 
-  .header-list {
+.header-list {
+  display: none;
+  @include media(desktop) {
     display: flex;
     gap: 24px;
   }
+}
 
-  .header-item {
+.header-item {
+  @include media(desktop) {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -144,8 +65,76 @@
       box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     }
   }
+}
 
-  .burger {
+.header-logo {
+  display: block;
+  margin-top: 8px;
+  width: 54px;
+  height: 44px;
+  cursor: pointer;
+  @include media(desktop){
+    width: 96px;
+    height: 46px;
+  }
+}
+
+.burger {
+  margin-top: 10px;
+  position: relative;
+  width: 30px;
+  height: 20px;
+  background-color: transparent;
+  cursor: pointer;
+  @include media(desktop) {
     display: none;
   }
+}
+
+.burger-input[type='checkbox'] {
+  display: none;
+}
+
+.burger span {
+  display: block;
+  position: absolute;
+  height: 2.5px;
+  width: 100%;
+  background-color: $_main_color;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.burger span:nth-of-type(1) {
+  top: 0;
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(3) {
+  top: 100%;
+  transform: translateY(-100%);
+  transform-origin: left center;
+}
+
+.burger input:checked ~ span:nth-of-type(1) {
+  transform: rotate(45deg);
+  top: 0px;
+  left: 0px;
+}
+
+.burger input:checked ~ span:nth-of-type(2) {
+  opacity: 0;
+  width: 0%;
+}
+
+.burger input:checked ~ span:nth-of-type(3) {
+  transform: rotate(-45deg);
+  top: 21px;
+  left: 0px;
 }

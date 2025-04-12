@@ -1,0 +1,40 @@
+<section class="explore">
+  <div class="explore-container">
+    <h2 class="explore-title">Explore the Candy Kingdom like never before!</h2>
+    <p class="explore-p">The sweetest treasures are just waiting to be found!</p>
+    <picture>
+      <source srcset="
+      ./img/explore/explore-desk.png    1x,
+      ./img/explore/explore-desk@2x.png 2x
+      " media="(min-width: 1200px)" />
+      <source srcset="
+      ./img/explore/explore-mob.png    1x,
+      ./img/explore/explore-mob@2x.png 2x
+      " media="(max-width: 1199px)" />
+      <img class="explore-img" src="./img/explore/explore-mob.png" alt="explore" />
+    </picture>
+    <div class="explore-list">
+      <div class="explore-wrapper">
+        <svg class="explore-svg">
+          <use href="sprite.svg#icon-location"></use>
+        </svg>
+        <h3>Clickable locations</h3>
+        <p class="explore-wrapper-p1">Clickable locations reveal special game tips</p>
+      </div>
+      <div class="explore-wrapper">
+        <svg class="explore-svg">
+          <use href="sprite.svg#icon-far"></use>
+        </svg>
+        <h3>Secret Paths</h3>
+        <p class="explore-wrapper-p2">Secret paths unlock hidden rewards</p>
+      </div>
+      <div class="explore-wrapper">
+        <svg class="explore-svg">
+          <use href="sprite.svg#icon-lock"></use>
+        </svg>
+        <h3>Progressive Unlocks</h3>
+        <p class="explore-wrapper-p3">Unlock new regions as you progress through levels</p>
+      </div>
+    </div>
+  </div>
+</section>

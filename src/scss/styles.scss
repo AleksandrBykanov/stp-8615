@@ -8,6 +8,9 @@
 @import './modal.scss';
 @import './cookies.scss';
 @import './overview.scss';
+@import './residents.scss';
+@import './explore.scss';
+@import './community.scss';
 @import './privacy.scss';
 @import './terms.scss';
 @import './cookiespolicy.scss';
@@ -20,6 +23,7 @@
   line-height: 1.25;
   letter-spacing: 0em;
   color: #301a25;
+  min-width: 300px;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -27,30 +31,28 @@
   -webkit-text-size-adjust: 100%;
 }
 
-@media screen and (max-width: $mobile) {
-  h1 {
-    font-family: 'Quicksand';
-    font-weight: 700;
-    font-size: 36px;
-  }
+h1 {
+  font-family: 'Quicksand';
+  font-weight: 700;
+  font-size: 36px;
+}
 
-  h2 {
-    font-family: 'Quicksand';
-    font-weight: 400;
-    font-size: 24px;
-  }
+h2 {
+  font-family: 'Quicksand';
+  font-weight: 400;
+  font-size: 24px;
+}
 
-  h3 {
-    font-family: 'Quicksand';
-    font-weight: 600;
-    font-size: 20px;
-  }
+h3 {
+  font-family: 'Quicksand';
+  font-weight: 600;
+  font-size: 20px;
+}
 
-  h4 {
-    font-family: 'Quicksand';
-    font-weight: 400;
-    font-size: 16px;
-  }
+h4 {
+  font-family: 'Quicksand';
+  font-weight: 400;
+  font-size: 16px;
 }
 
 @media screen and (min-width: $desktop) {
