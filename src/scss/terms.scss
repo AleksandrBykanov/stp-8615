@@ -2,14 +2,14 @@
   padding-block: 38px;
 
   @include media(desktop) {
-    padding-block: 40px;
+    padding-block: 85px;
   }
 }
 .terms-container {
   width: 272px;
   margin: 0 auto;
   display: flex;
-  gap: 16px;
+  gap: 20px;
   flex-direction: column;
 
   @include media(desktop) {
