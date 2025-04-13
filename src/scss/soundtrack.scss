@@ -1,0 +1,151 @@
+.soundtrack {
+  margin-top: 58px;
+  @include media(desktop) {
+    margin-top: 150px;
+  }
+}
+
+.soundtrack-container {
+  width: 272px;
+  margin: 0 auto;
+  @include media(desktop) {
+    width: 1072px;
+  }
+}
+
+.soundtrack-title {
+  text-align: center;
+  @include media(desktop) {
+    line-height: 1;
+  }
+}
+
+.soundtrack-p {
+  margin: 12px auto 48px auto;
+  text-align: center;
+  @include media(desktop) {
+    font-size: 18px;
+    line-height: 1.11111;
+    margin: 24px auto 34px auto;
+    width: 359px;
+  }
+}
+
+.soundtrack-flex {
+  @include media(desktop) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 114px;
+  }
+}
+
+.soundtrack-wrapper {
+  border: 0px solid #fff;
+  border-radius: 24px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+  background: #fff;
+  padding: 28px 10px;
+  @include media(desktop) {
+    width: 433px;
+    padding: 38px 80px;
+  }
+}
+
+.soundtrack-img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 37px;
+  @include media(desktop) {
+    margin-bottom: 24px;
+  }
+}
+
+.soundtrack-h3 {
+  text-align: center;
+  margin-bottom: 24px;
+  @include media(desktop) {
+    font-size: 36px;
+    line-height: 1;
+  }
+}
+
+.soundtrack-p2 {
+  @include media(desktop) {
+    font-size: 18px;
+    line-height: 1.11111;
+    text-align: center;
+  }
+}
+
+.soundtrack-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 48px;
+  padding: 15px;
+  border-radius: 16px;
+  background-color: $_pink;
+  margin: 39px auto 0 auto;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  }
+  &:active {
+    box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  }
+  @include media(desktop) {
+    margin: 24px auto 0 auto;
+    width: 250px;
+  }
+}
+
+.soundtrack-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.soundtrack-span {
+  font-size: 14px;
+  line-height: 1.28;
+  color: $_white;
+}
+
+.soundtrack-candys {
+  margin-top: 48px;
+  margin-bottom: 58px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  @include media(desktop) {
+    margin-top: 0;
+    gap: 34px;
+    margin-bottom: 0;
+  }
+}
+
+.soundtrack-candy1 {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.soundtrack-candy2 {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  flex-direction: row-reverse;
+  @include media(desktop) {
+    flex-direction: row;
+    margin-left: 38px;
+  }
+}
+
+.soundtrack-candy3 {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}

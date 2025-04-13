@@ -1,83 +1,94 @@
 .privacy {
   padding-block: 38px;
-
   @include media(desktop) {
     padding-block: 85px;
   }
 }
-.btn-back-url {
-  margin-bottom: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 16px;
-  font-family: inherit;
-  font-size: 24px;
-  width: 272px;
-  height: 52px;
-  background-color: $_pink;
-  color: #ffffff;
-  cursor: pointer;
-  &:hover {
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+.privacy-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 52px;
+    padding: 11px;
+    border-radius: 16px;
+    background-color: #EC4899;
+    margin: 0 auto;
+    cursor: pointer;
+    &:hover {
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    }
+    &:active {
+      box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    }
+    @include media(desktop) {
+      width: 242px;
+      margin: 0;
+    }
   }
-  &:active {
-    box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  }
-  @include media(desktop) {
-    width: 242px;
-    margin-bottom: 16px;
-  }
+
+.privacy-btn-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+  fill: white;
 }
+
+.privacy-btn-span {
+  font-size: 24px;
+  color: white;
+}
+
 .privacy-container {
   width: 272px;
   margin: 0 auto;
   display: flex;
   gap: 20px;
   flex-direction: column;
-
   @include media(desktop) {
     width: 1072px;
   }
 }
+
 .privacy-list {
   list-style: unset;
   font-size: 16px;
   line-height: calc(20 / 16);
   font-family: inherit;
   margin-left: 28px;
-
   @include media(desktop) {
     font-size: 18px;
     line-height: calc(20 / 18);
   }
 }
+
 .privacy-list-item-link {
   color: #3b82f6;
 }
+
 .privacy-header {
   font-size: 36px;
   line-height: calc(120 / 36);
   font-family: inherit;
-
   @include media(desktop) {
     font-size: 48px;
     line-height: calc(72 / 64);
   }
 }
+
 .privacy-subheader {
   font-size: 20px;
   font-family: inherit;
-
   @include media(desktop) {
     font-size: 24px;
   }
 }
+
 .privacy-txt {
   font-size: 16px;
   line-height: calc(20 / 16);
   font-family: inherit;
-
   @include media(desktop) {
     font-size: 18px;
     line-height: calc(20 / 18);

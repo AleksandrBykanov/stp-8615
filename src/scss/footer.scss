@@ -3,13 +3,13 @@
   height: 385px;
   position: relative;
   bottom: 0;
-  background-color: #ec4899;
-  color: #301a25;
+  background-color: $_pink;
   padding-top: 40px;
   padding-bottom: 20px;
   font-size: 18px;
   line-height: calc(20 / 18);
 }
+
 .footer-container {
   width: 272px;
   margin: 0 auto;
@@ -18,16 +18,31 @@
   gap: 40px;
   align-items: center;
 }
+
 .footer-content {
   display: flex;
   flex-direction: column;
   gap: 36px;
   text-align: center;
 }
+
+.footer-content-policy-link,
+.footer-content-terms-link,
+.footer-content-cookies-link {
+  &:hover {
+    color: white;
+  }
+}
+
 .footer-logo {
   display: flex;
   flex-direction: column;
 }
+
+.footer-logo-img {
+  width: 65px;
+}
+
 .footer-rights {
   display: flex;
   flex-direction: column;
@@ -35,6 +50,7 @@
   padding-inline: 28px;
   padding-block: 10.5px;
 }
+
 @media screen and (min-width: $desktop) {
   .footer {
     height: 132px;
@@ -42,26 +58,20 @@
     font-size: 16px;
     line-height: calc(20 / 16);
   }
+
   .footer-container {
     width: 1072px;
     flex-direction: row;
-    gap: 24px;
     justify-content: center;
+    gap: 24px;
   }
+
   .footer-content {
-    display: flex;
     flex-direction: row;
     gap: 20px;
-    text-align: center;
   }
-  .footer-logo {
-    display: flex;
-    flex-direction: column;
-  }
+
   .footer-rights {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
     padding-inline: 0;
     padding-block: 16px;
   }

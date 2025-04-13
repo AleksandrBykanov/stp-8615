@@ -1,5 +1,8 @@
 .community {
   margin-top: 48px;
+  @include media(desktop) {
+    margin-top: 150px;
+  }
 }
 
 .community-container {
