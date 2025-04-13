@@ -13,7 +13,7 @@
     <title>Sweet Candy World</title>
     
     <script type="module" crossorigin src="/stp-8615/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/stp-8615/assets/styles-67cec7f3.css">
+    <link rel="stylesheet" href="/stp-8615/assets/styles-3e5cd223.css">
   </head>
   <body>
     <header class="header">
@@ -28,22 +28,22 @@
       </a>
       <ul class="header-list">
         <li class="header-item">
-          <a class="header-link" href="#Home">Home</a>
+          <a class="header-link" href="home">Home</a>
         </li>
         <li class="header-item">
-          <a class="header-link" href="#Overview">Overview</a>
+          <a class="header-link" href="#overview">Overview</a>
         </li>
         <li class="header-item">
-          <a class="header-link" href="#Characters">Characters</a>
+          <a class="header-link" href="#characters">Characters</a>
         </li>
         <li class="header-item">
-          <a class="header-link" href="#Map">Map</a>
+          <a class="header-link" href="#map">Map</a>
         </li>
         <li class="header-item">
-          <a class="header-link" href="#Gallery">Gallery</a>
+          <a class="header-link" href="#gallery">Gallery</a>
         </li>
         <li class="header-item">
-          <a class="header-link" href="#Leaderboard">Leaderboard</a>
+          <a class="header-link" href="#leaderboard">Leaderboard</a>
         </li>
       </ul>
       <label class="burger" for="burger">
@@ -56,7 +56,7 @@
   </div>
 </header>
 
-    <section class="home">
+    <section id="home" class="home">
   <div class="home-container">
     <div class="home-wrapper">
       <h1 class="home-title">Enter the Sweet Candy Kingdom!</h1>
@@ -86,7 +86,7 @@
     <source srcset="/stp-8615/assets/cream-19428ba3.png 1x, /stp-8615/assets/cream@2x-773e690a.png 2x" />
     <img class="overview-img" src="/stp-8615/assets/cream-19428ba3.png" alt="cream" />
   </picture>
-  <div class="overview-container">
+  <div id="overview" class="overview-container">
     <div class="overview-wrapper">
       <h2 class="overview-title">Game Overview</h2>
       <p class="overview-p">Welcome to Sweet Candy World, a delicious match-3 adventure filled with colorful candies,
@@ -153,7 +153,7 @@
     </a>
   </div>
 </section>
-    <section class="residents">
+    <section id="characters" class="residents">
   <div class="residents-container">
     <h2 class="residents-title">Meet the Residents of Candy Kingdom!</h2>
     <p class="residents-p">Get to know these delightful characters as you progress through the game!</p>
@@ -197,7 +197,7 @@
     </div>
   </div>
 </section>
-    <section class="explore">
+    <section id="map" class="explore">
   <div class="explore-container">
     <h2 class="explore-title">Explore the Candy Kingdom like never before!</h2>
     <p class="explore-p">The sweetest treasures are just waiting to be found!</p>
@@ -231,7 +231,7 @@
     </div>
   </div>
 </section>
-    <section class="community">
+    <section id="gallery" class="community">
   <div class="community-container">
     <h2 class="community-title">Community Fan Art Gallery</h2>
     <p class="community-p">Celebrate the creativity of our players!</p>
@@ -316,7 +316,7 @@
     </div>
   </div>
 </section>
-    <section class="skills">
+    <section id="leaderboard" class="skills">
   <div class="skills-container">
     <h3 class="skills-title">Think you're the sweetest player in town?</h3>
     <p class="skills-p">Global leaderboards See who’s on top!</p>
@@ -413,46 +413,84 @@
     </div>
   </div>
 </section>
+    <section id="soundtrack" class="soundtrack">
+  <div class="soundtrack-container">
+    <h2 class="soundtrack-title">Sweet Candy World Soundtrack</h2>
+    <p class="soundtrack-p">Immerse yourself in the sugary sounds of Sweet Candy World!</p>
+    <div class="soundtrack-flex">
+      <div class="soundtrack-wrapper">
+        <picture class="soundtrack-img">
+          <source srcset="/stp-8615/assets/Rectangle-desk-b8c6bc74.png 1x, /stp-8615/assets/Rectangle-desk@2x-b6eebe98.png 2x" media="(min-width: 1200px)" />
+          <source srcset="/stp-8615/assets/Rectangle-mob-c1737448.png 1x, /stp-8615/assets/Rectangle-mob@2x-41bd78a5.png 2x" media="(max-width: 1199px)" />
+          <img src="/stp-8615/assets/Rectangle-mob-c1737448.png" alt="sound" />
+        </picture>
+        <h3 class="soundtrack-h3">Listen Now!</h3>
+        <p class="soundtrack-p2">Get into the rhythm of the game</p>
+        <a class="soundtrack-btn"
+          href="https://play.google.com/store/apps/details?id=com.v2r.JewelCandyWorld&hl=en&gl=us" target="_blank">
+          <svg class="soundtrack-icon">
+            <use href="sprite.svg#icon-hears"></use>
+          </svg>
+          <span class="soundtrack-span">Play Full Soundtrack</span>
+        </a>
+      </div>
+      <div class="soundtrack-candys">
+        <div class="soundtrack-candy1">
+          <picture class="overview-picture">
+            <source srcset="
+            ./img/overview/candy5.png      1x,
+            ./img/overview/candy5@2x.png   2x " />
+            <img src="/stp-8615/assets/candy5-8bb17780.png" alt="candy" />
+          </picture>
+          <div class="overview-candy-text">
+            <h3>Upbeat Tunes</h3>
+            <p>Upbeat tunes that make every match exciting</p>
+          </div>
+        </div>
+        <div class="soundtrack-candy2">
+          <picture class="overview-picture">
+            <source srcset="/stp-8615/assets/candy3-52a1eb4e.png 1x, /stp-8615/assets/candy3@2x-d680de39.png 2x" />
+            <img src="/stp-8615/assets/candy3-52a1eb4e.png" alt="candy" />
+          </picture>
+          <div class="overview-candy-text">
+            <h3>Special Effects</h3>
+            <p>Special sound effects for rare combos and boosters</p>
+          </div>
+        </div>
+        <div class="soundtrack-candy3">
+          <picture class="overview-picture">
+            <source srcset="/stp-8615/assets/candy2-abf2be15.png 1x, /stp-8615/assets/candy2@2x-d1c014f3.png 2x" />
+            <img src="/stp-8615/assets/candy2-abf2be15.png" alt="candy" />
+          </picture>
+          <div class="overview-candy-text">
+            <h3>Immersive Experience</h3>
+            <p>Relaxing background music for a cozy game session</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
     <footer class="footer">
   <div class="footer-container">
     <div class="footer-content">
-      <a
-        href="../page-2.html"
-        class="footer-content-policy-link"
-        rel="noopener no-referrer"
-        >Privacy Policy</a
-      >
-      <a
-        href="../page-3.html"
-        class="footer-content-terms-link"
-        rel="noopener no-referrer"
-        >Terms and Conditions</a
-      >
-      <a
-        href="../page-4.html"
-        class="footer-content-cookies-link"
-        rel="noopener no-referrer"
-        >Cookies Policy</a
-      >
+      <a href="../page-2.html" class="footer-content-policy-link" rel="noopener no-referrer">Privacy Policy</a>
+      <a href="../page-3.html" class="footer-content-terms-link" rel="noopener no-referrer">Terms and Conditions</a>
+      <a href="../page-4.html" class="footer-content-cookies-link" rel="noopener no-referrer">Cookies Policy</a>
     </div>
     <div class="footer-logo">
-      <a class="footer-logo-link" href="./index.html">
-        <img
-          class="footer-logo-link-img"
-          src="/stp-8615/assets/logo-mob-0f1f0124.png"
-          srcset="/stp-8615/assets/logo-mob-0f1f0124.png 1x, /stp-8615/assets/logo-mob@2x-e386b8e7.png 2x"
-          alt="Sweet Candy World"
-        />
+      <a href="./index.html">
+        <img class="footer-logo-img" src="/stp-8615/assets/logo-mob-0f1f0124.png"
+          srcset="/stp-8615/assets/logo-mob-0f1f0124.png 1x, /stp-8615/assets/logo-mob@2x-e386b8e7.png 2x" alt="Sweet Candy World" />
       </a>
     </div>
     <div class="footer-rights">
-      <p class="footer-rights-txt">
+      <p>
         &copy;2025 candyempire.site, All rights reserved
       </p>
     </div>
   </div>
 </footer>
-
     <div class="cookies">
   <div class="cookies-container">
     <div class="cookies-wrapper">
@@ -470,25 +508,25 @@
   <div class="modal-container">
     <ul class="modal-list">
       <li class="modal-item">
-        <a class="modal-link" href="#Home">Home</a>
+        <a class="modal-link" href="#home">Home</a>
       </li>
       <li class="modal-item">
-        <a class="modal-link" href="#Overview">Game Overview</a>
+        <a class="modal-link" href="#overview">Game Overview</a>
       </li>
       <li class="modal-item">
-        <a class="modal-link" href="#Characters">Character Spotlight</a>
+        <a class="modal-link" href="#characters">Character Spotlight</a>
       </li>
       <li class="modal-item">
-        <a class="modal-link" href="#Map">Interactive Game Map</a>
+        <a class="modal-link" href="#map">Interactive Game Map</a>
       </li>
       <li class="modal-item">
-        <a class="modal-link" href="#Fan">Community Fan</a>
+        <a class="modal-link" href="#gallery">Community Fan</a>
       </li>
       <li class="modal-item">
-        <a class="modal-link" href="#Rankings">Player Rankings</a>
+        <a class="modal-link" href="#leaderboard">Player Rankings</a>
       </li>
       <li class="modal-item">
-        <a class="modal-link" href="#Rankings">Soundtrack Preview</a>
+        <a class="modal-link" href="#soundtrack">Soundtrack Preview</a>
       </li>
     </ul>
   </div>
