@@ -7,13 +7,16 @@
   top: 0;
   @include media(desktop) {
     height: 58px;
-    background: rgba(255, 255, 255, 0.5);
+    background: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
 }
 
-.header.transparent {
-  background: transparent;
-}
+// .header.transparent {
+//   background: transparent;
+// }
 
 .header-container {
   width: 320px;
@@ -29,7 +32,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 
 .header-list {
@@ -71,7 +73,7 @@
   width: 54px;
   height: 44px;
   cursor: pointer;
-  @include media(desktop){
+  @include media(desktop) {
     width: 96px;
     height: 46px;
   }

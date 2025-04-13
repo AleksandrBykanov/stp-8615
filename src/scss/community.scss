@@ -15,6 +15,11 @@
 
 .community-title {
   text-align: center;
+  width: 182px;
+  margin: 0 auto;
+  @include media(desktop) {
+    width: 452px;
+  }
 }
 
 .community-p {

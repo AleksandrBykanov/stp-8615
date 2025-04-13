@@ -2,10 +2,10 @@
     display: none;
     position: absolute;
     width: 100%;
-    height: 671px;
+    height: 611px;
     background: $_soft_gradient;
     z-index: 5;
-    top: 0;
+    top: 60px;
     @include media(desktop) {
       display: none;
     }
@@ -17,7 +17,7 @@
 
   .modal-list {
     width: 200px;
-    margin: 168px auto 0 auto;
+    margin: 100px auto 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
